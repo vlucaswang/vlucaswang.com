@@ -1,6 +1,6 @@
-module vlucaswang.com
+module github.com/vlucaswang/vlucaswang.com
 
-go 1.17
+go 1.18
 
 require (
 	github.com/schnerring/hugo-mod-github-readme-stats v0.0.0-20220625143204-eae468cb8bf2 // indirect

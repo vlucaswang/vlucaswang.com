@@ -20,7 +20,7 @@ enableRobotsTXT = true
   # dark or light, defaults to light
   defaultTheme = "light"
   # gray red green yellow blue purple aqua orange, defaults to blue
-  themeColor = "yellow"
+  themeColor = "aqua"
   # soft medium hard, defaults to medium
   themeContrast = "soft"
   author = "Lucas Wang"
@@ -98,6 +98,16 @@ enableRobotsTXT = true
     name = "About"
     url = "/about"
     weight = 20
+  [[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "https://registry.jsonresume.org/vlucaswang"
+    weight = 30
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog"
+    weight = 50
 
 [languages]
   [languages.en]

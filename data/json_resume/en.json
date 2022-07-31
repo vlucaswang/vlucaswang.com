@@ -23,6 +23,11 @@
         "network": "Github",
         "username": "vlucaswang",
         "url": "https://github.com/vlucaswang"
+      },
+      {
+        "network": "RSS",
+        "username": "RSS",
+        "url": "https://vlucaswang/index.xml"
       }
     ]
   },
@@ -31,6 +36,7 @@
       "name": "Envato",
       "position": "Site Reliability Engineer",
       "website": "https://www.envato.com",
+      "location": "Adelaide, Australia",
       "startDate": "2021-05-31",
       "summary": "I optimized, improved and maintained hybrid Heroku/AWS application environments.",
       "highlights": [
@@ -46,6 +52,7 @@
       "name": "illion",
       "position": "DevOps Engineer",
       "website": "https://www.illion.com.au",
+      "location": "Adelaide, Australia",
       "startDate": "2020-10-31",
       "endDate": "2021-05-31",
       "summary": "I leaded the project to containerize EC2-based environment for better avaliability.",
