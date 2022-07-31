@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "theme": "autumn"
+  },
+  "basics": {
+    "name": "Lucas Wang",
+    "label": "Site Reliability Engineer",
+    "image": "https://avatars.githubusercontent.com/u/384200?s=400&u=94632c84844ee79b5cbd6200b7bb371368956cb8&v=4",
+    "email": "lucas.wang@vlucaswang.com",
+    "website": "https://vlucaswang.com",
+    "summary": "A Site Reliability Engineer with ten years of system administration and automation experience, passionate about solving problems at scale and delivering impactful solutions.",
+    "location": {
+      "countryCode": "AU",
+      "city": "Adelaide"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "xiaochuanwang",
+        "url": "https://www.linkedin.com/in/xiaochuanwang"
+      },
+      {
+        "network": "Github",
+        "username": "vlucaswang",
+        "url": "https://github.com/vlucaswang"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Envato",
+      "position": "Site Reliability Engineer",
+      "website": "https://www.envato.com",
+      "startDate": "2021-05-31",
+      "summary": "I optimized, improved and maintained hybrid Heroku/AWS application environments.",
+      "highlights": [
+        "Developed subject-matter expertise on Cloudflare by understanding stakeholder needs and views.",
+        "Containerized Continuous Delivery pipelines for a suite of Ruby and NodeJS applications.",
+        "Assisted with our team's building out all infrastructure in managed code using Terraform.",
+        "Collaborated with peers on the development of new tools and services used by all engineers.",
+        "Integrated and migrated monitoring solutions into meaningful observability measurement, to help stakeholder in decision making.",
+        "Added customized instrumentations to code for adding application observiability."
+      ]
+    },
+    {
+      "name": "illion",
+      "position": "DevOps Engineer",
+      "website": "https://www.illion.com.au",
+      "startDate": "2020-10-31",
+      "endDate": "2021-05-31",
+      "summary": "I leaded the project to containerize EC2-based environment for better avaliability.",
+      "highlights": [
+        "Built new NGINX(EC2)/PHP/Laravel(EC2)/MySQL(RDS) systems in AWS from code repository to fully automated test/staging/prod environment",
+        "Implemented packer pipeline to build immutable AMI and update AutoScaling Groups, utilizing CodeDeploy to provide blue/green deployments.",
+        "Rebuilt build/deploy pipeline to improve mean time to deliver from 2 hours to 10 minutes.",
+        "Migrated CloudWatch Logs to SumoLogic and building SumoLogic log/metrics-based dashboards to provide operation and business visibility.",
+        "Worked with security team to obtain SOC 2 Type 2/ISO 27001.",
+        "Reduced AWS Cost by 10% in 6 month and improved efficience."
+      ]
+    },
+    {
+      "name": "Avinet",
+      "position": "DevOps Engineer",
+      "website": "https://airmaestro.net",
+      "location": "Adelaide, Australia",
+      "startDate": "2019-05-31",
+      "endDate": "2020-10-31",
+      "summary": "I built new infrastructure-as-code .Net-based systems in AWS, deployed by CI/CD pipeline with Azure DevOps/Octopus Deploy/Atlantis/Terraform.",
+      "highlights": [
+        "Provided end-to-end performance visualization and real-time security issue identification in the production environment via SumoLogic/Site24x7/PRTG/Cloudwatch and reduced the response time from 45 min to 15 min.",
+        "Implemented AWS automation to cut down the production update window by 50% and eliminate human dependencies by 90%.",
+        "Converted existing manual deployments to reproducible idempotent processes in the CD pipeline.",
+        "Performed vulnerability scans again internal system at a different level with different tools: Cloud Conformity/Rapid 7/Amazon Inspector and applied report with remediation.",
+        "Planned, migrated and managed On-Premises Atlassian stack to Atlassian Cloud.",
+        "Connected Okta SAML/SSO with all internal/external services."
+      ]
+    },
+    {
+      "name": "TP IT Solutions PTY LTD",
+      "position": "Technical Support Engineer",
+      "location": "Adelaide, Australia",
+      "startDate": "2016-04-30",
+      "endDate": "2019-05-31",
+      "summary": "I supported day-to-day operations of the company and all the customers by proactively identifying problems and analyzing future needs.",
+      "highlights": [
+        "Performed all systems administration duties, including configuration and maintenance of business services on both Windows and Linux-based, physical and VMware environments.",
+        "Automatic provisioning of enterprise infrastructure and application environment through Gitlab, Terraform, Ansible and PowerShell in multi-stack instances.",
+        "Managed and validated auto-restored backups with PowerShell scripting.",
+        "Designed and implemented High Available AWS solutions for clients with Auto Scale EC2, ELB, Amazon RDS and S3."
+      ]
+    },
+    {
+      "name": "Sichuan S.Y.S Software System Co.,Ltd",
+      "position": "Linux Engineer",
+      "startDate": "2013-11-30",
+      "endDate": "2016-02-28",
+      "summary": "I managed over 1200 RHEL virtual machines on VMware vSphere infrastructure of more than 250 servers located in three different data centres.",
+      "highlights": [
+        "Dedicated project manager with responsibility for Linux automation platform deployment, leading a team of five technical people.",
+        "Provided Level 2 and Level 3 support for business-critical systems.",
+        "Planned a disaster recovery strategy with the standard of three data centres.",
+        "Analyzed multi-dimensional system issues including performance tuning, kernel panic trouble-shooting, application trouble-shooting, resource allocating, and system security enhancement."
+      ]
+    },
+    {
+      "name": "Talend",
+      "position": "IT Specialist",
+      "website": "https://www.talend.com",
+      "startDate": "2012-04-30",
+      "endDate": "2013-11-30",
+      "summary": "I was responsible for management, strategy and execution of IT infrastructure in Talend Beijing Office.",
+      "highlights": [
+        "Administrated over 300 Centos/Ubuntu mixed virtual machines on VMware vSphere infrastructure of more than 20 servers.",
+        "Participated in testing and operating OTRS IT management system, providing improved customer SLA for internal staff with supporting and tracking.",
+        "Experienced in agile development and configuration management technologies such as Kickstarts, Cobbler and Ansible.",
+        "Managed and maintained VMware vSphere clusters."
+      ]
+    },
+    {
+      "name": "Chongqing Dongxiang Medical Apparatus and Instruments Co., Ltd",
+      "position": "IT Engineer",
+      "startDate": "2008-08-31",
+      "endDate": "2009-04-30",
+      "summary": "Solo engineer managed all Linux servers and IT environment."
+    }
+  ],
+  "education": [
+    {
+      "institution": "The University of Texas at Arlington",
+      "area": "Computer Science (incomplete)",
+      "studyType": "Masters",
+      "startDate": "2009-12-31",
+      "endDate": "2011-12-31"
+    },
+    {
+      "institution": "Chongqing University of Post and Telecommunications",
+      "area": "Electrical and Electronics Engineering",
+      "studyType": "Bachelors",
+      "startDate": "2004-12-31",
+      "endDate": "2008-12-31"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "RHCA",
+      "issuer": "Redhat",
+      "startDate": "2013-09-30"
+    },
+    {
+      "name": "AWS Certified SysOps Administrator",
+      "issuer": "Amazon",
+      "startDate": "2019-09-30"
+    }
+  ],
+  "skills": [
+    {
+      "keywords": ["AWS", "Terraform", "Cloudflare"],
+      "name": "Platform"
+    },
+    {
+      "keywords": ["Buildkite", "Octupus Deploy", "Github"],
+      "name": "DevOps"
+    },
+    {
+      "keywords": ["Pagerduty", "Datadog", "Sumologic", "Rollbar"],
+      "name": "Incident"
+    },
+    {
+      "keywords": ["Bash", "PowerShell", "Golang"],
+      "name": "Language"
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Full Professional",
+      "language": "English"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "Mandarin"
+    }
+  ]
+}

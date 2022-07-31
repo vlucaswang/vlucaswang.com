@@ -1,0 +1,107 @@
+baseURL = "http://localhost"
+copyright = "© 2019-2022 Lucas Wang"
+title = "Lucas Wang"
+#paginate = 10
+enableRobotsTXT = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # This setting allows inlining <script> and <style> tags in markdown,
+      # which is useful and required to use Prism plugins, but may be dangerous
+      # if the content isn't trustworthy.
+      unsafe = true
+
+[imaging]
+  # JPEG and WebP quality
+  quality = 90
+
+[params]
+  # dark or light, defaults to light
+  defaultTheme = "light"
+  # gray red green yellow blue purple aqua orange, defaults to blue
+  themeColor = "yellow"
+  # soft medium hard, defaults to medium
+  themeContrast = "soft"
+  author = "Lucas Wang"
+  subtitle = "Site Reliability Engineer"
+  description = "Lucas Wang is an engineer and loves finding new things."
+
+  # Plausible auth secret to enable public dashboard
+  # plausibleAuth = ""
+
+  [params.logo]
+    text = "vlucaswang.com"
+    url = "/"
+
+  [params.prism]
+    languages = [
+      "markup",
+      "go",
+      "bash",
+      "javascript",
+      "typescript",
+      "hcl",
+      "ignore",
+      "json",
+      "markdown",
+      "powershell",
+      "toml",
+      "yaml"
+    ]
+    plugins = [
+      "normalize-whitespace",
+      "toolbar",
+      "copy-to-clipboard",
+      "command-line"
+    ]
+
+  # Social share links for posts:
+  #   - iconSuite: "simple-icon" or "tabler-icon"
+  #   - iconName: name of the icon from the "iconSuite"
+  #   - {url} placeholder for post .Permalink
+  #   - {title} placeholder for post .Title
+  # See  https://github.com/bradvin/social-share-urls for more format strings
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "twitter"
+    formatString = "https://twitter.com/intent/tweet?url={url}&text={title}"
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "linkedin"
+    formatString = "https://www.linkedin.com/sharing/share-offsite/?url={url}"
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "facebook"
+    formatString = "https://www.facebook.com/sharer.php?u={url}"
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "reddit"
+    formatString = "https://reddit.com/submit?url={url}&title={title}"
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "ycombinator"
+    formatString = "https://news.ycombinator.com/submitlink?u={url}&t={title}"
+  [[params.socialShare]]
+    iconSuite = "tabler-icon"
+    iconName = "mail"
+    formatString = "mailto:?subject={title}&body={url}"
+
+[menu]
+  [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "/cv"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 20
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 10
+    [languages.en.params.jsonResume]
+      present = "present"
