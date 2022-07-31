@@ -31,7 +31,7 @@ enableRobotsTXT = true
   # plausibleAuth = ""
 
   [params.logo]
-    text = "vlucaswang.com"
+    text = "www.vlucaswang.com"
     url = "/"
 
   [params.prism]
@@ -99,10 +99,15 @@ enableRobotsTXT = true
     url = "/about"
     weight = 20
   [[menu.main]]
-    identifier = "resume"
-    name = "Resume"
+    identifier = "jsonresume"
+    name = "JSONResume"
     url = "https://registry.jsonresume.org/vlucaswang"
     weight = 30
+  [[menu.main]]
+    identifier = "ha"
+    name = "HA"
+    url = "https://home.vlucaswang.com"
+    weight = 40
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
