@@ -44,8 +44,8 @@
         "Containerized Continuous Delivery pipelines for a suite of Ruby and NodeJS applications.",
         "Assisted with our team's building out all infrastructure in managed code using Terraform.",
         "Collaborated with peers on the development of new tools and services used by all engineers.",
-        "Integrated and migrated monitoring solutions into meaningful observability measurement, to help stakeholder in decision making.",
-        "Added customized instrumentations to code for adding application observiability."
+        "Integrated and migrated monitoring solutions into meaningful observability measurement, to help stakeholders in decision making.",
+        "Added customized instrumentations to code for adding application observability."
       ]
     },
     {
@@ -60,9 +60,9 @@
         "Built new NGINX(EC2)/PHP/Laravel(EC2)/MySQL(RDS) systems in AWS from code repository to fully automated test/staging/prod environment",
         "Implemented packer pipeline to build immutable AMI and update AutoScaling Groups, utilizing CodeDeploy to provide blue/green deployments.",
         "Rebuilt build/deploy pipeline to improve mean time to deliver from 2 hours to 10 minutes.",
-        "Migrated CloudWatch Logs to SumoLogic and building SumoLogic log/metrics-based dashboards to provide operation and business visibility.",
+        "Migrated CloudWatch Logs to SumoLogic and built SumoLogic log/metrics-based dashboards to provide operation and business visibility.",
         "Worked with security team to obtain SOC 2 Type 2/ISO 27001.",
-        "Reduced AWS Cost by 10% in 6 month and improved efficience."
+        "Reduced AWS Cost by 10% in 6 months and improved efficiency."
       ]
     },
     {
