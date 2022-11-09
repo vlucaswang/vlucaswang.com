@@ -33,11 +33,25 @@
   },
   "work": [
     {
+      "name": "Domain",
+      "position": "Site Reliability Engineer",
+      "website": "https://www.domain.com.au",
+      "location": "Adelaide, Australia",
+      "startDate": "2022-09-31",
+      "summary": "I worked on the adaption and culture for developers to embrace observability.",
+      "highlights": [
+        "Improved effectiveness of incident management.",
+        "Improved observability in the application.",
+        "Improved reliability of the infrastructure."
+      ]
+    },
+    {
       "name": "Envato",
       "position": "Site Reliability Engineer",
       "website": "https://www.envato.com",
       "location": "Adelaide, Australia",
       "startDate": "2021-05-31",
+      "endDate": "2022-09-31",
       "summary": "I optimized, improved and maintained hybrid Heroku/AWS application environments.",
       "highlights": [
         "Developed subject-matter expertise on Cloudflare by understanding stakeholder needs and views.",
