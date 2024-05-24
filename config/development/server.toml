@@ -1,2 +1,0 @@
-[headers.values]
-  Content-Security-Policy = 'script-src localhost:1313'
