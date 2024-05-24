@@ -7,7 +7,7 @@
     "download": "curl -LJO https://gist.githubusercontent.com/vlucaswang/9556731ac107d04dc50be647ed38336c/raw/resume.json",
     "pdf": "node index.js",
     "validate": "resumed validate",
-    "copy": "cp index.html pages/index.html",
+    "copy": "cp -a index.html images pages/",
     "build": "yarn download && yarn validate && yarn start && yarn pdf && yarn copy"
   },
   "dependencies": {

@@ -1,6 +1,7 @@
 node_modules
 pages/*.html
 pages/*.pdf
+pages/images
 resume.json
 
 .DS_Store
