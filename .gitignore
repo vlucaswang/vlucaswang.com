@@ -2,3 +2,5 @@ node_modules
 pages/*.html
 pages/*.pdf
 resume.json
+
+.DS_Store
