@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "init": "resumed init",
+    "start": "resumed --output pages/resume.html --theme jsonresume-theme-autumn-pathify",
+    "download": "curl -LJO https://gist.githubusercontent.com/vlucaswang/9556731ac107d04dc50be647ed38336c/raw/resume.json",
+    "pdf": "node index.js",
+    "validate": "resumed validate",
+    "copy": "cp index.html pages/index.html",
+    "build": "yarn download && yarn validate && yarn start && yarn pdf && yarn copy"
+  },
+  "dependencies": {
+    "jsonresume-theme-autumn-pathify": "^1.0.2",
+    "puppeteer": "^13.0.0",
+    "resumed": "^3.0.0"
+  }
+}
