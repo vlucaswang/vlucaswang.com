@@ -1,0 +1,12 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = [ "nkwdwxc@gmail.com" ]
+description = "Lucas Wang fastly site"
+language = "javascript"
+manifest_version = 2
+name = "lucas-wang-fastly"
+
+[scripts]
+  build = "npm run build"
+  
