@@ -1,0 +1,1 @@
+When making changes to @rendercv/resume.yaml, see @specs/resume.md.
