@@ -1,1 +1,1 @@
-When making changes to @rendercv/resume.yaml, see @specs/resume.md.
+When making changes to @rendercv/resume_*.yaml, see @specs/resume.md.

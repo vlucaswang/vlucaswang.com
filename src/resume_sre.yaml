@@ -1,0 +1,271 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.3/schema.json
+cv:
+  name: Lucas Wang
+  location: Adelaide, Australia
+  email: lucas.wang@vlucaswang.com
+  website: https://www.vlucaswang.com
+  social_networks:
+  sections:
+    summary:
+      - "Senior Platform Engineer with 13 years of experience building secure, scalable production systems. Reduced change lead time by 15% by architecting AI-powered code review workflows. Specialized in cloud infrastructure, observability, CI/CD automation, and incident response."
+    skills:
+      - label: "**Programming**"
+        details: Bash, Python, TypeScript
+      - label: "**Platform**"
+        details: AWS, Kubernetes, CDK, Terraform, Cloudflare, Akamai
+      - label: "**CI/CD**"
+        details: GitLab, Buildkite, Jenkins, GitHub, ArgoCD, SonarQube
+      - label: "**Developer Experience**"
+        details: Backstage, Cursor, Jira, Confluence
+      - label: "**Observability/Incident**"
+        details: Pagerduty, ELK, Prometheus, Grafana
+    experience:
+      - company: Viator
+        position: Senior Systems Engineer
+        start_date: 2025-04
+        end_date: 2025-11
+        location: Adelaide, Australia
+        summary: 
+        highlights:
+          - Shortened median change lead time by 15% (from 11 to 9 hours) by deploying Cursor AI code review locally in IDE and in pipeline steps.
+          - Reduced internal support first response time by 50% by implementing AI Slackbot to handle common issues using internal knowledge base.
+          - Reclaimed 10% of team velocity by architecting and delivering GitLab token automation workflow.
+      - company: Domain
+        position: Senior DevOps Engineer/Site Reliability Engineer
+        start_date: 2022-09
+        end_date: 2025-04
+        location: Adelaide, Australia
+        summary: Built fault-tolerant and self-healing platforms which are easy to use, learn, deploy and contribute to and operate.
+        highlights:
+          - Improved platform reliability and scalability by migrating from AWS ECS to Kubernetes environment supporting 100+ microservices.
+          - Reduced API response latency by 30% by designing and implementing Envoy/Gloo-based API Gateway with intelligent routing.
+          - Accelerated delivery cycle by 40% by creating developer-first ArgoCD pipeline enabling self-service deployments.
+          - Maintained 99.9% uptime for core infrastructure and platform serving Domain's production workloads by implementing monitoring and automation.
+          - Enabled 20+ product teams to deploy independently by building Kubernetes-based platform with standardized workflows.
+          - Shifted left security, quality, and observability by integrating Orca, CrowdStrike, SonarQube, and ELK into platform pipelines.
+          - Reduced support tickets by 60% by delivering capability training to product teams and establishing self-service documentation.
+          - Migrated 15+ teams to GitOps workflow by uplifting CI/CD tooling across Jenkins, GitHub Actions, and ArgoCD.
+      - company: Envato
+        position: Site Reliability Engineer
+        start_date: 2021-05
+        end_date: 2022-09
+        location: Adelaide, Australia
+        summary: Optimized, improved and maintained hybrid Heroku/AWS application environments.
+        highlights:
+          - Reduced CDN costs by 25% by developing Cloudflare expertise and optimizing caching strategies based on stakeholder requirements.
+          - Improved deployment reliability by 50% by containerizing CI/CD pipelines for Ruby and NodeJS application suite.
+          - Enabled infrastructure auditability and repeatability by migrating all infrastructure to Terraform managed code.
+          - Increased engineering productivity by 20% by collaborating on development of shared tools and services for all engineers.
+          - Improved incident resolution time by 40% by migrating monitoring to comprehensive observability platform supporting data-driven decisions.
+          - Enhanced application troubleshooting by adding custom instrumentation to critical code paths for observability.
+      - company: illion
+        position: DevOps Engineer
+        start_date: 2020-10
+        end_date: 2021-05
+        location: Adelaide, Australia
+        summary: Focused on architecting new AWS ECS environment. Migrated existing EC2 environment for scalability and security.
+        highlights:
+          - Improved scalability and security posture as measured by successful containerization of entire production environment, by architecting and migrating from EC2 to AWS ECS.
+          - Reduced change lead time by 92% (from 2 hours to 10 minutes) by designing and implementing automated CI/CD pipeline.
+          - Achieved SOC 2 Type 2 and ISO 27001 compliance as measured by successful audit completion, by leading audit preparation and providing comprehensive evidence to auditors.
+      - company: Avinet
+        position: DevOps Engineer
+        start_date: 2019-05
+        end_date: 2020-10
+        location: Adelaide, Australia
+        summary: Focused on modernizing infrastructure and process. Established incident management and disaster recovery process.
+        highlights: 
+          - Reduced mean time to recovery by 70% as measured by incident response metrics, by establishing incident management process and implementing disaster recovery procedures.
+          - Achieved audit compliance as measured by 100% infrastructure codification, by migrating entire AWS environment to Infrastructure as Code using Terraform.
+          - Improved production update efficiency as measured by 50% reduction in update window and 90% reduction in human dependencies, by implementing comprehensive AWS automation.
+      - company: TP IT Solutions PTY LTD
+        position: Technical Support Engineer
+        start_date: 2016-04
+        end_date: 2019-05
+        location: Adelaide, Australia
+        summary: Focused on client-facing and customer support. Designed and delivered automated standard operating environment for over 70 clients.
+      - company: Sichuan S.Y.S Software System Co.,Ltd
+        position: Linux Engineer
+        start_date: 2013-11
+        end_date: 2016-02
+        location: China
+        summary: Focused as Linux subject matter expert. Designed and delivered bare metal Linux server management on Ansible, managed over 1200 VMs on 250 VMware vSphere environment.
+      - company: Talend
+        position: IT Engineer
+        start_date: 2012-04
+        end_date: 2013-11
+        location: China
+        summary: Focused on IT support and server management. Managed IT infrastructure and supported over 100 developers in Talend branch Office.
+    education:
+      - institution: The University of Texas at Arlington
+        area: Computer Science
+        degree: Degree
+        grade:
+        date:
+        start_date: 2009-12
+        end_date: 2011-12
+        location: Arlington, TX, USA
+        summary:
+        highlights:
+      - institution: Chongqing University of Post and Telecommunications
+        area: Electrical Engineering
+        degree: Degree
+        grade:
+        date:
+        start_date: 2004-12
+        end_date: 2008-12
+        location: Chongqing, China
+        summary:
+        highlights:
+  sort_entries: none
+design:
+  theme: engineeringresumes
+  page:
+    size: a4
+    top_margin: 2cm
+    bottom_margin: 2cm
+    left_margin: 2cm
+    right_margin: 2cm
+    show_page_numbering: false
+    show_last_updated_date: true
+  colors:
+    text: rgb(0, 0, 0)
+    name: rgb(0, 0, 0)
+    connections: rgb(0, 0, 0)
+    section_titles: rgb(0, 0, 0)
+    links: rgb(0, 0, 0)
+    last_updated_date_and_page_numbering: rgb(128, 128, 128)
+  text:
+    font_family: XCharter
+    font_size: 10.5pt
+    leading: 0.6em
+    alignment: left
+    date_and_location_column_alignment: right
+  links:
+    underline: true
+    use_external_link_icon: false
+  header:
+    name_font_family: XCharter
+    name_font_size: 25pt
+    name_bold: false
+    small_caps_for_name: false
+    photo_width: 3.5cm
+    vertical_space_between_name_and_connections: 0.7cm
+    vertical_space_between_connections_and_first_section: 0.7cm
+    horizontal_space_between_connections: 0.5cm
+    connections_font_family: XCharter
+    separator_between_connections: '|'
+    use_icons_for_connections: false
+    use_urls_as_placeholders_for_connections: true
+    make_connections_links: true
+    alignment: center
+  section_titles:
+    type: with-full-line
+    font_family: XCharter
+    font_size: 1.2em
+    bold: true
+    small_caps: false
+    line_thickness: 0.5pt
+    vertical_space_above: 0.55cm
+    vertical_space_below: 0.3cm
+  entries:
+    date_and_location_width: 4.15cm
+    left_and_right_margin: 0cm
+    horizontal_space_between_columns: 0.1cm
+    vertical_space_between_entries: 0.4cm
+    allow_page_break_in_sections: true
+    allow_page_break_in_entries: true
+    short_second_row: false
+    show_time_spans_in: []
+  highlights:
+    bullet: •
+    nested_bullet: '-'
+    top_margin: 0.25cm
+    left_margin: 0cm
+    vertical_space_between_highlights: 0.19cm
+    horizontal_space_between_bullet_and_highlight: 0.3em
+    summary_left_margin: 0cm
+  entry_types:
+    one_line_entry:
+      template: '**LABEL:** DETAILS'
+    education_entry:
+      main_column_first_row_template: '**INSTITUTION**, DEGREE in AREA -- LOCATION'
+      degree_column_template:
+      degree_column_width: 1cm
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: DATE
+    normal_entry:
+      main_column_first_row_template: '**NAME** -- **LOCATION**'
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: DATE
+    experience_entry:
+      main_column_first_row_template: '**POSITION**, COMPANY -- LOCATION'
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: DATE
+    publication_entry:
+      main_column_first_row_template: '**TITLE**'
+      main_column_second_row_template: |-
+        AUTHORS
+        URL (JOURNAL)
+      main_column_second_row_without_journal_template: |-
+        AUTHORS
+        URL
+      main_column_second_row_without_url_template: |-
+        AUTHORS
+        JOURNAL
+      date_and_location_column_template: DATE
+locale:
+  language: en
+  phone_number_format: national
+  page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  last_updated_date_template: Last updated in TODAY
+  date_template: MONTH_ABBREVIATION YEAR
+  month: month
+  months: months
+  year: year
+  years: years
+  present: present
+  to: –
+  abbreviations_for_months:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - June
+    - July
+    - Aug
+    - Sept
+    - Oct
+    - Nov
+    - Dec
+  full_names_of_months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+rendercv_settings:
+  date: '2025-11-07'
+  bold_keywords: []
+  sort_entries: none
+  render_command:
+    output_folder_name: pages
+    pdf_path: NAME_IN_SNAKE_CASE_SRE_CV.pdf
+    dont_generate_html: true
+    dont_generate_markdown: true
+    dont_generate_pdf: false
+    dont_generate_png: true

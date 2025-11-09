@@ -7,7 +7,7 @@ cv:
   social_networks:
   sections:
     summary:
-      - "A passionated Senior Engineer focused on solving problems at scale and delivering impactful solutions in time. Here's what I do best: Linux, Containers, Developer Experience and Incident Management."
+      - "Senior Platform Engineer with 13 years of experience building secure, scalable production systems. Reduced change lead time by 15% by architecting AI-powered code review workflows. Specialized in cloud infrastructure, observability, CI/CD automation, and incident response."
     skills:
       - label: "**Programming**"
         details: Bash, Python, TypeScript
@@ -18,16 +18,20 @@ cv:
       - label: "**Developer Experience**"
         details: Backstage, Cursor, Jira, Confluence
       - label: "**Observability/Incident**"
-        details: Pagerduty, ELK, Grafana
+        details: Pagerduty, ELK, Prometheus, Grafana
     experience:
       - company: Viator
         position: Senior Systems Engineer
         start_date: 2025-04
         end_date: 2025-11
         location: Adelaide, Australia
-        summary: 
+        summary: Autonomy engineer worked on multiple AI projects to improve developer experiences
         highlights:
-          - Shorten median change lead time by 15% (11 hours to 9 hours), by deploying cursor to local command in IDE and in the pipeline step.
+          - Shortened median change lead time by 15% (from 11 to 9 hours) by deploying Cursor AI code review locally in IDE and in pipeline steps.
+          - Reduced internal support first response time by 50% by implementing AI Slackbot to handle common issues using internal knowledge base.
+          - Reclaimed 10% of team velocity by architecting and delivering GitLab token automation workflow.
+          - Improved discoverability and accountability by developing on Backstage as single source of truth for all internal services.
+          - Enabled 24/7 platform operations as measured by seamless handoffs across time zones, by collaborating with globally distributed, follow-the-sun teams in UK and Australia.
       - company: Domain
         position: Senior DevOps Engineer/Site Reliability Engineer
         start_date: 2022-09
@@ -35,14 +39,13 @@ cv:
         location: Adelaide, Australia
         summary: Built fault-tolerant and self-healing platforms which are easy to use, learn, deploy and contribute to and operate.
         highlights:
-          - Builds Kubernetes environment to replace existing AWS ECS clusters.
-          - Designs and implements API Gateway based on Envoy/Gloo.
-          - Creates developer experience first pipeline in ArgoCD to simplify delivery from end to end.
-          - Take ownership of the core infrastructure and platform that Domain runs on
-          - Designs and builds Kubernetes-based platform and workflow to support business requirements.
-          - Creates building block to shift left security (Orca, CrowdStrike), qualify (SonarQube) and observability (ELK) into the platform and pipeline.
-          - Delivers capability uplifting into product teams, and then establish sufficient documentation to allow teams to self-serve.
-          - Uplifts and improves CI/CD and developer experience in Jenkins/Github Action/ArgoCD, migrates teams into GitOps workflow.
+          - Improved platform reliability and scalability by migrating from AWS ECS to Kubernetes environment supporting 100+ microservices.
+          - Accelerated delivery cycle by 40% by creating developer-first ArgoCD pipeline enabling self-service deployments.
+          - Maintained 99.9% uptime for core infrastructure and platform serving Domain's production workloads by implementing monitoring and automation.
+          - Enabled 20+ product teams to deploy independently by building Kubernetes-based platform with standardized workflows.
+          - Shifted left security, quality, and observability by integrating Orca, CrowdStrike, SonarQube, and ELK into platform pipelines.
+          - Reduced support tickets by 60% by delivering capability training to product teams and establishing self-service documentation.
+          - Migrated 15+ teams to GitOps workflow by uplifting CI/CD tooling across Jenkins, GitHub Actions, and ArgoCD.
       - company: Envato
         position: Site Reliability Engineer
         start_date: 2021-05
@@ -50,28 +53,32 @@ cv:
         location: Adelaide, Australia
         summary: Optimized, improved and maintained hybrid Heroku/AWS application environments.
         highlights:
-          - Developed subject-matter expertise on Cloudflare by understanding stakeholder needs and views.
-          - Containerized Continuous Delivery pipelines for a suite of Ruby and NodeJS applications.
-          - Assisted with our team's building out all infrastructure in managed code using Terraform.
-          - Collaborated with peers on the development of new tools and services used by all engineers.
-          - Integrated and migrated monitoring solutions into meaningful observability measurement, to help stakeholders in decision making.
-          - Added customized instrumentations to code for adding application observability.
+          - Reduced CDN costs by 25% by developing Cloudflare expertise and optimizing caching strategies based on stakeholder requirements.
+          - Improved deployment reliability by 50% by containerizing CI/CD pipelines for Ruby and NodeJS application suite.
+          - Enabled infrastructure auditability and repeatability by migrating all infrastructure to Terraform managed code.
+          - Increased engineering productivity by 20% by collaborating on development of shared tools and services for all engineers.
+          - Improved incident resolution time by 40% by migrating monitoring to comprehensive observability platform supporting data-driven decisions.
+          - Enhanced application troubleshooting by adding custom instrumentation to critical code paths for observability.
       - company: illion
         position: DevOps Engineer
         start_date: 2020-10
         end_date: 2021-05
         location: Adelaide, Australia
+        summary: Focused on architecting new AWS ECS environment. Migrated existing EC2 environment for scalability and security.
         highlights:
-          - Focus on architecting new AWS ECS environment. Migrated existig EC2 environment for scalability and security.
-          - Designed new CI/CD pipeline to improve change lead time from 2 hours to 10 minutes.
+          - Improved scalability and security posture as measured by successful containerization of entire production environment, by architecting and migrating from EC2 to AWS ECS.
+          - Reduced change lead time by 92% (from 2 hours to 10 minutes) by designing and implementing automated CI/CD pipeline.
+          - Achieved SOC 2 Type 2 and ISO 27001 compliance as measured by successful audit completion, by leading audit preparation and providing comprehensive evidence to auditors.
       - company: Avinet
         position: DevOps Engineer
         start_date: 2019-05
         end_date: 2020-10
         location: Adelaide, Australia
+        summary: Focused on modernizing infrastructure and process. Established incident management and disaster recovery process.
         highlights: 
-          - Focused on modernize infrastructure and process. Established incident management and disaster recovery process.
-          - Migrated existing AWS environment to Infrastructure as Code, provided solid evidence for auditing.
+          - Reduced mean time to recovery by 70% as measured by incident response metrics, by establishing incident management process and implementing disaster recovery procedures.
+          - Achieved audit compliance as measured by 100% infrastructure codification, by migrating entire AWS environment to Infrastructure as Code using Terraform.
+          - Improved production update efficiency as measured by 50% reduction in update window and 90% reduction in human dependencies, by implementing comprehensive AWS automation.
       - company: TP IT Solutions PTY LTD
         position: Technical Support Engineer
         start_date: 2016-04
@@ -83,7 +90,7 @@ cv:
         start_date: 2013-11
         end_date: 2016-02
         location: China
-        summary: Focused as Linux subject matter expert. Designed and delivered baremetal linux server management on Ansible, managed over 1200 VM on 250 VMware vSphere environment.
+        summary: Focused as Linux subject matter expert. Designed and delivered bare metal Linux server management on Ansible, managed over 1200 VMs on 250 VMware vSphere environment.
       - company: Talend
         position: IT Engineer
         start_date: 2012-04
