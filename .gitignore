@@ -1,7 +1,7 @@
-node_modules
-pages/*.html
-pages/*.pdf
-pages/images
-resume.json
+pages/*
+!pages/index.html
+!pages/robots.txt
+!pages/images
+applications/*
 
 .DS_Store

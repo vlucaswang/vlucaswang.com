@@ -6,10 +6,9 @@ My personal website, [www.vlucaswang.com](https://www.vlucaswang.com).
 
 ```bash
 # Install dependencies
-yarn
+pip install -r requirements.txt
 # Generate site files
-yarn build
-open pages/index.html
+rendercv render --watch "resume_base.yaml"
 ```
 
 ## License
