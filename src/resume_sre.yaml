@@ -7,7 +7,7 @@ cv:
   social_networks:
   sections:
     summary:
-      - "Senior Platform Engineer with 13 years of experience building secure, scalable production systems. Reduced change lead time by 15% by architecting AI-powered code review workflows. Specialized in cloud infrastructure, observability, CI/CD automation, and incident response."
+      - "Senior Platform Engineer with 13 years of experience building secure, scalable production systems. Led cross-domain(infrastructure, observability, security) projects to improve developer experiences. Specialized in cloud infrastructure, observability, CI/CD automation, and incident response."
     skills:
       - label: "**Programming**"
         details: Bash, Python, TypeScript
@@ -15,19 +15,21 @@ cv:
         details: AWS, Kubernetes, CDK, Terraform, Cloudflare, Akamai
       - label: "**CI/CD**"
         details: GitLab, Buildkite, Jenkins, GitHub, ArgoCD, SonarQube
+      - label: "**Building System**"
+        details: Develocity, Nexus Repository, AWS CodeArtifact
       - label: "**Developer Experience**"
         details: Backstage, Cursor, Jira, Confluence
       - label: "**Observability/Incident**"
-        details: Pagerduty, ELK, Prometheus, Grafana
+        details: Pagerduty, ELK, New Relic, Datadog, Prometheus, Grafana
     experience:
       - company: Viator
         position: Senior Systems Engineer
         start_date: 2025-04
         end_date: 2025-11
         location: Adelaide, Australia
-        summary: 
+        summary: Autonomy engineer worked on cross-domain projects to improve developer experiences
         highlights:
-          - Shortened median change lead time by 15% (from 11 to 9 hours) by deploying Cursor AI code review locally in IDE and in pipeline steps.
+          - Visualized project-based metrics in Backstage to provide data insights for improving and measuring Developer Experience.
           - Reduced internal support first response time by 50% by implementing AI Slackbot to handle common issues using internal knowledge base.
           - Reclaimed 10% of team velocity by architecting and delivering GitLab token automation workflow.
       - company: Domain
@@ -38,12 +40,10 @@ cv:
         summary: Built fault-tolerant and self-healing platforms which are easy to use, learn, deploy and contribute to and operate.
         highlights:
           - Improved platform reliability and scalability by migrating from AWS ECS to Kubernetes environment supporting 100+ microservices.
-          - Reduced API response latency by 30% by designing and implementing Envoy/Gloo-based API Gateway with intelligent routing.
-          - Accelerated delivery cycle by 40% by creating developer-first ArgoCD pipeline enabling self-service deployments.
+          - Achieving 40% SLO adoption rate in 3 months by designing and implementing SLO helm charts for general applications.
           - Maintained 99.9% uptime for core infrastructure and platform serving Domain's production workloads by implementing monitoring and automation.
           - Enabled 20+ product teams to deploy independently by building Kubernetes-based platform with standardized workflows.
           - Shifted left security, quality, and observability by integrating Orca, CrowdStrike, SonarQube, and ELK into platform pipelines.
-          - Reduced support tickets by 60% by delivering capability training to product teams and establishing self-service documentation.
           - Migrated 15+ teams to GitOps workflow by uplifting CI/CD tooling across Jenkins, GitHub Actions, and ArgoCD.
       - company: Envato
         position: Site Reliability Engineer
@@ -54,10 +54,9 @@ cv:
         highlights:
           - Reduced CDN costs by 25% by developing Cloudflare expertise and optimizing caching strategies based on stakeholder requirements.
           - Improved deployment reliability by 50% by containerizing CI/CD pipelines for Ruby and NodeJS application suite.
-          - Enabled infrastructure auditability and repeatability by migrating all infrastructure to Terraform managed code.
-          - Increased engineering productivity by 20% by collaborating on development of shared tools and services for all engineers.
-          - Improved incident resolution time by 40% by migrating monitoring to comprehensive observability platform supporting data-driven decisions.
-          - Enhanced application troubleshooting by adding custom instrumentation to critical code paths for observability.
+          - Reduced Observability costs by 45% by migrating from New Relic to Datadog and enforcing actionable alerts.
+          - Improved incident resolution time by 40% by integrating Pagerduty workflow with Datadog and supporting data-driven decisions.
+          - Enhanced application troubleshooting by adding opentelmetry custom instrumentation to critical code paths for observability.
       - company: illion
         position: DevOps Engineer
         start_date: 2020-10
