@@ -5,11 +5,32 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run RenderCV",
+      "name": "Run RenderCV - base resume",
       "type": "debugpy",
       "request": "launch",
       "module": "rendercv",
       "args": ["render", "src/resume_base.yaml", "--watch"]
+    },
+    {
+      "name": "Run RenderCV - infra",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "rendercv",
+      "args": ["render", "src/resume_infra_tf.yaml"]
+    },
+    {
+      "name": "Run RenderCV - elk",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "rendercv",
+      "args": ["render", "src/resume_infra_elk.yaml"]
+    },
+    {
+      "name": "Run RenderCV - sre",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "rendercv",
+      "args": ["render", "src/resume_sre.yaml"]
     }
   ]
 }

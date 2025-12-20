@@ -3,5 +3,5 @@ pages/*
 !pages/robots.txt
 !pages/images
 applications/*
-
+*.pdf
 .DS_Store

@@ -11,9 +11,9 @@ cv:
       - "Senior Platform Engineer with 13 years of experience building secure, scalable production systems. Have led cross-domain projects (infrastructure, observability, security) to improve developer experience. Specialize in cloud infrastructure, observability, CI/CD automation, and incident response."
     skills:
       - label: "**Programming**"
-        details: Bash, Python, TypeScript, C#(.NET)
+        details: Bash, Python, TypeScript
       - label: "**Platform**"
-        details: AWS, Kubernetes, AWS CDK, Terraform, Cloudflare, Akamai
+        details: AWS, Kubernetes, Terraform, AWS CDK, Cloudflare, Akamai
       - label: "**CI/CD**"
         details: GitLab, Buildkite, Jenkins, GitHub, Argo CD, SonarQube
       - label: "**Build Systems**"
@@ -30,10 +30,9 @@ cv:
         location: Adelaide, Australia
         summary: Autonomous engineer working on cross-domain projects to improve developer experience
         highlights:
-          - Visualized project-based metrics in Backstage to provide data insights for improving and measuring developer experience.
+          - Improved coverage for 40 services to use standard metrics and dashboards in Grafana via inhouse script and Terraform.
           - Reduced first-response time for internal support by 50% by implementing an AI Slack bot to handle common issues using the internal knowledge base.
           - Reclaimed 10% of team velocity by architecting and delivering a GitLab token automation workflow.
-          - Improved coverage for 40 services to use standard metrics and dashboards in Grafana via inhouse script and Terraform.
       - company: Domain
         position: Senior DevOps Engineer / Site Reliability Engineer
         start_date: 2022-09
@@ -41,9 +40,9 @@ cv:
         location: Adelaide, Australia
         summary: Built fault-tolerant, self-healing platforms that are easy to use, learn, deploy, contribute to, and operate.
         highlights:
-          - Improved platform reliability and scalability by migrating from AWS ECS to a Kubernetes environment supporting 100+ microservices.
-          - Achieved a 40% SLO adoption rate in 3 months by designing and implementing SLO Helm charts for general applications.
+          - Improved platform reliability and scalability by migrating from AWS ECS to newly designed Kubernetes environment supporting 100+ microservices.
           - Enabled 20+ product teams to deploy independently by building a Kubernetes-based platform via Terraform and Atlantis.
+          - Achieved a 40% SLO adoption rate in 3 months by designing and implementing SLO Helm charts for general applications.
           - Shifted security, quality, and observability left by integrating Orca, CrowdStrike, SonarQube, and ELK into the platform pipelines.
           - Migrated 15+ teams to GitOps workflows by upgrading CI/CD tooling across Jenkins, GitHub Actions, and Argo CD.
       - company: Envato
@@ -63,9 +62,9 @@ cv:
         start_date: 2020-10
         end_date: 2021-05
         location: Adelaide, Australia
-        summary: Focused on architecting and migrating the existing EC2 environment to a new AWS ECS environment.
+        summary: Focused on architecting a new AWS ECS environment. Migrated the existing EC2 environment for scalability and security.
         highlights:
-          - Improved scalability and security posture by architecting and migrating from EC2 to AWS ECS, successfully containerizing the entire ASP.NET environment.
+          - Improved scalability and security posture by architecting and migrating from EC2 to AWS ECS, successfully containerizing the entire production environment and managed in Terraform.
           - Reduced change lead time by 92% (from 2 hours to 10 minutes) by designing and implementing an automated CI/CD pipeline.
           - Achieved SOC 2 Type 2 and ISO 27001 compliance by leading audit preparation and providing comprehensive evidence, culminating in successful audits.
       - company: Avinet
@@ -77,7 +76,7 @@ cv:
         highlights:
           - Reduced mean time to recovery by 70% by establishing incident management processes and implementing disaster recovery procedures.
           - Achieved audit compliance by migrating the entire AWS environment to infrastructure as code (IaC) using Terraform.
-          - Improved Windows Server/ASP.NET update efficiency by reducing the update window by 50% and human dependencies by 90% through comprehensive AWS automation.
+          - Improved production update efficiency by reducing the update window by 50% and human dependencies by 90% through comprehensive AWS automation.
       - company: TP IT Solutions Pty Ltd
         position: Technical Support Engineer
         start_date: 2016-04
@@ -264,6 +263,7 @@ rendercv_settings:
   sort_entries: none
   render_command:
     output_folder_name: pages
+    pdf_path: NAME_IN_SNAKE_CASE_INFRA_CV.pdf
     dont_generate_html: false
     dont_generate_markdown: false
     dont_generate_pdf: false
