@@ -15,7 +15,7 @@ pydantic==2.12.5
 pydantic-extra-types==2.10.6
 pydantic_core==2.41.5
 Pygments==2.19.2
-rendercv==2.3
+rendercv==2.6
 rendercv-fonts==0.5.1
 rich==14.2.0
 ruamel.yaml==0.18.16
