@@ -24,5 +24,5 @@ shellingham==1.5.4
 typer==0.20.0
 typing-inspection==0.4.2
 typing_extensions==4.15.0
-typst==0.14.4
+typst==0.14.5
 watchdog==6.0.0
