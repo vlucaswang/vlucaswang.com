@@ -5,3 +5,5 @@ pages/*
 applications/*
 *.pdf
 .DS_Store
+
+src/rendercv_output
