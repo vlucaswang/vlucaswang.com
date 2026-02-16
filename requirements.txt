@@ -9,7 +9,7 @@ markdown-it-py==4.0.0
 MarkupSafe==3.0.3
 mdurl==0.1.2
 packaging==25.0
-phonenumbers==9.0.20
+phonenumbers==9.0.21
 pycountry==24.6.1
 pydantic==2.12.5
 pydantic-extra-types==2.10.6
