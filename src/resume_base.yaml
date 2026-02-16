@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
 cv:
   name: Lucas Wang
   location: Adelaide, Australia
@@ -150,12 +150,15 @@ locale:
   years: years
   present: present
 rendercv_settings:
-  date: '2025-11-07'
+  date: '2025-11-08'
   bold_keywords: []
   sort_entries: none
   render_command:
-    output_folder_name: pages
+    pdf_path: pages/NAME_IN_SNAKE_CASE_CV.pdf
+    html_path: pages/NAME_IN_SNAKE_CASE_CV.html
+    markdown_path: pages/NAME_IN_SNAKE_CASE_CV.md
+    dont_generate_markdown: true
     dont_generate_html: false
-    dont_generate_markdown: false
+    dont_generate_typst: true
     dont_generate_pdf: false
     dont_generate_png: true
