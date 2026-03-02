@@ -1,12 +1,79 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Fira Code: https://github.com/tonsky/FiraCode */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+:root {
+  --background: #eceae5; /* Light Pistachio bg */
+  --foreground: #1a170f;
+  --accent: #93c572;
+  --radius: 0;
+  --font-size: 1rem;
+  --line-height: 1.54em;
+}
+
+/* Dark mode overrides */
+.dark {
+  --background: #1a170f;
+  --foreground: #eceae5;
+  --accent: #93c572;
+}
+
 @theme {
-  --font-sans: "Inter", "system-ui", "-apple-system", "sans-serif";
+  --font-sans: "Fira Code", "monospace";
+  --font-mono: "Fira Code", "monospace";
+  --color-accent: var(--accent);
+  --color-terminal-bg: var(--background);
+  --color-terminal-fg: var(--foreground);
 }
 
 @layer base {
   body {
-    @apply antialiased;
+    @apply antialiased bg-[var(--background)] text-[var(--foreground)] font-mono transition-colors duration-200;
+    line-height: var(--line-height);
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-[var(--accent)] tracking-tight;
+  }
+
+  a {
+    @apply text-[var(--accent)] hover:underline;
+  }
+
+  /* Custom borders and styles for terminal look */
+  .framed {
+    @apply border-2 border-[var(--accent)] p-4;
+  }
+
+  hr {
+    @apply border-0 h-[2px] bg-[var(--accent)];
+  }
+
+  pre {
+    @apply border border-[var(--foreground)]/20 p-4 rounded-none bg-[var(--foreground)]/5;
+  }
+
+  code {
+    @apply bg-[var(--foreground)]/5 px-1 py-0.5 rounded-none;
+  }
+
+  /* Theme Toggle Icon visibility */
+  #sun-icon { @apply hidden; }
+  #moon-icon { @apply block; }
+
+  .dark #sun-icon { @apply block; }
+  .dark #moon-icon { @apply hidden; }
+}
+
+/* Header logo pattern */
+.header-logo-after {
+  background: repeating-linear-gradient(90deg, var(--accent), var(--accent) 2px, transparent 0, transparent 10px);
+}
+
+/* Selection styling */
+::selection {
+  background: var(--accent);
+  color: var(--background);
 }

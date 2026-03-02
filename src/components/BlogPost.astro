@@ -9,21 +9,24 @@ interface Props {
 const { title, description, pubDate, url } = Astro.props;
 ---
 
-<article class="group relative py-8 border-b border-gray-100 dark:border-gray-800 last:border-0">
+<article class="group relative py-8 border-b-2 border-dashed border-[var(--accent)] last:border-0">
   <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8">
-    <time class="text-sm font-medium text-gray-500 tabular-nums shrink-0 w-32">
-      {pubDate}
+    <time class="text-sm font-bold text-[var(--foreground)] opacity-70 uppercase tracking-widest shrink-0 w-40">
+      :: {pubDate} ::
     </time>
-    <div class="space-y-3">
-      <h3 class="text-xl font-bold tracking-tight group-hover:text-blue-600 transition-colors">
+    <div class="space-y-4">
+      <h3 class="text-2xl font-bold tracking-tight group-hover:bg-[var(--accent)] group-hover:text-[var(--background)] transition-all inline-block px-1">
         <a href={url}>
           <span class="absolute inset-0"></span>
           {title}
         </a>
       </h3>
-      <p class="text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl">
+      <p class="text-[var(--foreground)] opacity-80 leading-relaxed max-w-2xl text-lg">
         {description}
       </p>
+      <div class="text-[var(--accent)] font-bold uppercase tracking-widest text-sm">
+        [ Read Post ]
+      </div>
     </div>
   </div>
 </article>

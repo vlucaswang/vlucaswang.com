@@ -3,21 +3,34 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Resume | Lucas Wang">
-  <div class="max-w-3xl mx-auto py-12 md:py-24">
-    <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-8 text-center">Resume</h1>
-    <div class="p-8 border border-gray-100 dark:border-gray-800 rounded-2xl bg-white dark:bg-gray-900 shadow-sm text-center">
-      <p class="text-xl mb-8">
-        Looking for my full professional background?
+  <div class="max-w-3xl mx-auto py-12 md:py-24 text-center">
+    <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-12 underline decoration-dotted underline-offset-[16px]">
+      &gt; RESUME
+    </h1>
+    
+    <div class="p-12 border-8 border-[var(--accent)] bg-[var(--background)] shadow-[16px_16px_0px_0px_var(--accent)]">
+      <p class="text-2xl font-bold mb-12 uppercase tracking-widest">
+        :: looking for my full background? ::
       </p>
-      <a href="/resume.pdf" class="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white font-bold rounded-full hover:scale-105 transition-all">
-        Download PDF
-        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-      </a>
-      <p class="mt-8 text-sm text-gray-500">
-        Generated with my custom <a href="https://github.com/vlucaswang/rendercv" class="underline">resume engine</a>.
-      </p>
+      
+      <div class="flex justify-center mb-12">
+        <a href="/resume.pdf" class="inline-flex items-center gap-4 px-12 py-5 bg-[var(--accent)] text-[var(--background)] font-black text-xl uppercase tracking-[0.2em] hover:opacity-90 transition-all">
+          [ DOWNLOAD_PDF ]
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+        </a>
+      </div>
+      
+      <div class="space-y-6 opacity-70 font-bold uppercase tracking-widest text-sm">
+        <p>&gt; generated via custom rendercv engine</p>
+        <p>&gt; platform: cloudflare pages</p>
+        <p>&gt; last updated: march 2026</p>
+      </div>
     </div>
+    
+    <p class="mt-20 text-[var(--accent)] font-bold italic">
+      "Engineering secure, scalable production systems at the edge."
+    </p>
   </div>
 </Layout>
