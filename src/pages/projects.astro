@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+---
+
+<Layout title="Projects | Lucas Wang">
+  <div class="max-w-4xl mx-auto py-12 md:py-24">
+    <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-8">Projects</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl">
+      A selection of my recent work, side projects, and open-source contributions.
+    </p>
+    
+    <div class="grid gap-8 md:grid-cols-2">
+      {projects.map((project) => (
+        <ProjectCard 
+          title={project.data.title}
+          description={project.data.description}
+          url={project.data.url}
+          tags={project.data.tags}
+        />
+      ))}
+    </div>
+  </div>
+</Layout>

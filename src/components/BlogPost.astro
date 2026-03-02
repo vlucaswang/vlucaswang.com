@@ -1,0 +1,29 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  pubDate: string;
+  url: string;
+}
+
+const { title, description, pubDate, url } = Astro.props;
+---
+
+<article class="group relative py-8 border-b border-gray-100 dark:border-gray-800 last:border-0">
+  <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8">
+    <time class="text-sm font-medium text-gray-500 tabular-nums shrink-0 w-32">
+      {pubDate}
+    </time>
+    <div class="space-y-3">
+      <h3 class="text-xl font-bold tracking-tight group-hover:text-blue-600 transition-colors">
+        <a href={url}>
+          <span class="absolute inset-0"></span>
+          {title}
+        </a>
+      </h3>
+      <p class="text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl">
+        {description}
+      </p>
+    </div>
+  </div>
+</article>

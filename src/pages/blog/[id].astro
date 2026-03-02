@@ -1,0 +1,39 @@
+---
+import { getEntry, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { formatDate } from '../../utils/date';
+
+const { id } = Astro.params;
+
+if (!id) {
+  return Astro.redirect('/404');
+}
+
+const post = await getEntry('blog', id);
+
+if (!post) {
+  return Astro.redirect('/404');
+}
+
+const { Content } = await render(post);
+---
+
+<Layout title={`${post.data.title} | Lucas Wang`}>
+  <article class="max-w-3xl mx-auto py-12 md:py-24">
+    <div class="mb-8">
+      <time class="text-sm font-medium text-gray-500 mb-4 block">
+        {formatDate(post.data.pubDate)}
+      </time>
+      <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-4">
+        {post.data.title}
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-400 leading-relaxed italic">
+        {post.data.description}
+      </p>
+    </div>
+    
+    <div class="prose prose-lg dark:prose-invert max-w-none mt-12 prose-headings:font-black prose-headings:tracking-tight prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-xl">
+      <Content />
+    </div>
+  </article>
+</Layout>

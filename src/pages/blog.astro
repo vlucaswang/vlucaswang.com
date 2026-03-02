@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BlogPost from '../components/BlogPost.astro';
+import { getCollection } from 'astro:content';
+import { formatDate } from '../utils/date';
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+---
+
+<Layout title="Blog | Lucas Wang">
+  <div class="max-w-4xl mx-auto py-12 md:py-24">
+    <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-8">Blog</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl">
+      Sharing my thoughts on software engineering, technology, and career.
+    </p>
+    
+    <div class="divide-y divide-gray-100 dark:divide-gray-800">
+      {sortedPosts.map((post) => (
+        <BlogPost 
+          title={post.data.title}
+          description={post.data.description}
+          pubDate={formatDate(post.data.pubDate)}
+          url={`/blog/${post.id}`}
+        />
+      ))}
+    </div>
+  </div>
+</Layout>
