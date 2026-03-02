@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import BlogPost from '../components/BlogPost.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
 
 const featuredPosts = [
   {
@@ -18,20 +19,13 @@ const featuredPosts = [
   },
 ];
 
-const featuredProjects = [
-  {
-    title: 'Project Alpha',
-    description: 'A cutting-edge AI assistant for developers built with deep learning models.',
-    url: '/projects/alpha',
-    tags: ['AI', 'React', 'TypeScript'],
-  },
-  {
-    title: 'Beta Framework',
-    description: 'A lightweight framework for building distributed systems with low latency.',
-    url: '/projects/beta',
-    tags: ['Go', 'Distributed Systems'],
-  },
-];
+const projects = await getCollection('projects');
+const featuredProjects = projects.map(p => ({
+  title: p.data.title,
+  description: p.data.description,
+  url: p.data.url,
+  tags: p.data.tags
+}));
 ---
 
 <Layout title="Lucas Wang | Software Engineer">
