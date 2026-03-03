@@ -40,9 +40,9 @@ const { title, description = "My Personal Portfolio Site" } = Astro.props;
     </script>
   </head>
   <body class="bg-[var(--background)] text-[var(--foreground)] font-mono min-h-screen flex flex-col">
-    <div class="container mx-auto px-4 max-w-4xl border-x border-dashed border-[var(--accent)] min-h-screen flex flex-col">
+    <div class="mx-auto px-10 max-w-[864px] min-h-screen flex flex-col border-r border-[var(--accent)]/10">
       <Header />
-      <main class="flex-grow py-12">
+      <main class="flex-grow py-10">
         <slot />
       </main>
       <Footer />

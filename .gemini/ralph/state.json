@@ -1,8 +1,8 @@
 {
   "active": true,
   "current_iteration": 1,
-  "max_iterations": 5,
+  "max_iterations": 20,
   "completion_promise": "TASK_COMPLETE",
-  "original_prompt": "the deployed branch website (https://feat-astro-portfolio.vlucaswang-com.pages.dev/) has 2 issues: first the resume pdf file is return 404 error. second, the top right icon to switch light and dark theme is not working/clickable. Last, I want to use this Astro Theme: https://github.com/dennisklappe/astro-theme-terminal and use the theme color scheme preset to Pistachio. Once the test is all passed, you are complete.",
-  "started_at": "2026-03-02T22:17:49Z"
+  "original_prompt": "The font size and style is too large. check the example site https://dennisklappe.github.io/astro-theme-terminal/ and change mine to match the example site style. Once the test is all passed, you are complete.",
+  "started_at": "2026-03-03T13:29:31Z"
 }

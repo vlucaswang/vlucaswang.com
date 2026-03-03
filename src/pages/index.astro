@@ -22,44 +22,44 @@ const featuredProjects = projects.map(p => ({
 ---
 
 <Layout title="Lucas Wang | Software Engineer">
-  <section class="py-12 md:py-24">
-    <div class="max-w-3xl">
-      <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-8 leading-tight">
+  <section class="py-10">
+    <div>
+      <h1 class="font-bold tracking-tighter mb-6 leading-tight m-0!">
         &gt; I'M <span class="bg-[var(--accent)] text-[var(--background)] px-2">LUCAS WANG</span>
       </h1>
-      <p class="text-xl md:text-2xl text-[var(--foreground)] mb-12 leading-relaxed max-w-2xl opacity-90">
+      <p class="text-[var(--foreground)] mb-10 leading-relaxed max-w-2xl opacity-90 m-0!">
         Senior Platform Engineer building secure, scalable systems. 
         Specializing in infrastructure, observability, and developer experience.
       </p>
-      <div class="flex flex-wrap gap-6">
-        <a href="/about" class="px-8 py-3 border-4 border-[var(--accent)] font-bold uppercase tracking-widest hover:bg-[var(--accent)] hover:text-[var(--background)] transition-all">
+      <div class="flex flex-wrap gap-4 mt-6">
+        <a href="/about" class="px-6 py-2 border-2 border-[var(--accent)] font-bold uppercase tracking-widest text-xs hover:bg-[var(--accent)] hover:text-[var(--background)] transition-all">
           [ Learn More ]
         </a>
-        <a href="/projects" class="px-8 py-3 border-4 border-[var(--accent)] font-bold uppercase tracking-widest hover:bg-[var(--accent)] hover:text-[var(--background)] transition-all">
+        <a href="/projects" class="px-6 py-2 border-2 border-[var(--accent)] font-bold uppercase tracking-widest text-xs hover:bg-[var(--accent)] hover:text-[var(--background)] transition-all">
           [ Portfolio ]
         </a>
       </div>
     </div>
   </section>
 
-  <section class="py-20 border-t-4 border-[var(--accent)]">
-    <div class="flex justify-between items-baseline mb-12">
-      <h2 class="text-3xl font-bold uppercase tracking-widest underline decoration-dotted underline-offset-8">Featured Posts</h2>
-      <a href="/blog" class="font-bold text-[var(--accent)] hover:underline">:: View All ::</a>
+  <section class="py-10 border-t-2 border-[var(--accent)]">
+    <div class="flex justify-between items-baseline mb-8">
+      <h2 class="font-bold uppercase tracking-widest underline decoration-dotted underline-offset-8 m-0!">Featured Posts</h2>
+      <a href="/blog" class="font-bold text-[var(--accent)] text-xs hover:underline">:: View All ::</a>
     </div>
-    <div class="space-y-12">
+    <div class="space-y-8">
       {featuredPosts.map((post) => (
         <BlogPost {...post} />
       ))}
     </div>
   </section>
 
-  <section class="py-20 border-t-4 border-[var(--accent)]">
-    <div class="flex justify-between items-baseline mb-12">
-      <h2 class="text-3xl font-bold uppercase tracking-widest underline decoration-dotted underline-offset-8">Recent Projects</h2>
-      <a href="/projects" class="font-bold text-[var(--accent)] hover:underline">:: Portfolio ::</a>
+  <section class="py-10 border-t-2 border-[var(--accent)]">
+    <div class="flex justify-between items-baseline mb-8">
+      <h2 class="font-bold uppercase tracking-widest underline decoration-dotted underline-offset-8 m-0!">Recent Projects</h2>
+      <a href="/projects" class="font-bold text-[var(--accent)] text-xs hover:underline">:: Portfolio ::</a>
     </div>
-    <div class="grid gap-8 md:grid-cols-2">
+    <div class="grid gap-6 md:grid-cols-2">
       {featuredProjects.map((project) => (
         <ProjectCard {...project} />
       ))}

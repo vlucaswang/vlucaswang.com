@@ -9,24 +9,24 @@ const tools = [
 ---
 
 <Layout title="Uses | Lucas Wang">
-  <div class="max-w-3xl mx-auto py-12 md:py-24">
-    <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-12 underline decoration-dotted underline-offset-[16px]">
+  <div>
+    <h1 class="font-black uppercase tracking-tighter mb-8 underline decoration-dotted underline-offset-[12px] m-0!">
       &gt; USES
     </h1>
-    <p class="text-xl text-[var(--foreground)] opacity-90 mb-16 font-bold italic">
+    <p class="text-sm text-[var(--foreground)] opacity-90 mb-12 font-bold italic m-0!">
       :: A list of tools, gear, and software I use daily ::
     </p>
     
-    <div class="space-y-20">
+    <div class="space-y-12">
       {tools.map((section) => (
         <div class="group">
-          <h2 class="text-3xl font-bold mb-8 uppercase tracking-[0.2em] text-[var(--accent)] flex items-center gap-4">
-            <span class="bg-[var(--accent)] text-[var(--background)] px-2">#</span>
+          <h2 class="font-bold mb-6 uppercase tracking-[0.2em] text-[var(--accent)] flex items-center gap-2 m-0!">
+            <span class="bg-[var(--accent)] text-[var(--background)] px-1">#</span>
             {section.category}
           </h2>
-          <ul class="grid gap-6 md:grid-cols-2">
+          <ul class="grid gap-4 md:grid-cols-2 m-0!">
             {section.items.map((item) => (
-              <li class="p-6 border-2 border-dashed border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--background)] font-bold transition-all uppercase tracking-widest text-sm">
+              <li class="p-4 border-2 border-dashed border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--background)] font-bold transition-all uppercase tracking-widest text-[10px]">
                 {item}
               </li>
             ))}
@@ -35,8 +35,8 @@ const tools = [
       ))}
     </div>
     
-    <div class="mt-24 p-8 border-4 border-[var(--accent)] bg-[var(--foreground)]/5 text-center">
-      <p class="font-bold uppercase tracking-widest text-sm opacity-70">
+    <div class="mt-16 p-6 border-4 border-[var(--accent)] bg-[var(--foreground)]/5 text-center">
+      <p class="font-bold uppercase tracking-widest text-[10px] opacity-70 m-0!">
         :: updated periodically ::
       </p>
     </div>

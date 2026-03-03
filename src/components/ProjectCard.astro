@@ -9,17 +9,17 @@ interface Props {
 const { title, description, url, tags } = Astro.props;
 ---
 
-<div class="p-8 border-4 border-[var(--accent)] bg-[var(--background)] hover:shadow-[8px_8px_0px_0px_var(--accent)] transition-all">
-  <h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter">&gt; {title}</h3>
-  <p class="text-[var(--foreground)] opacity-90 mb-8 leading-relaxed italic">{description}</p>
-  <div class="flex flex-wrap gap-3 mb-8">
+<div class="p-6 border-4 border-[var(--accent)] bg-[var(--background)] hover:shadow-[4px_4px_0px_0px_var(--accent)] transition-all">
+  <h3 class="font-bold mb-4 uppercase tracking-tighter m-0!">&gt; {title}</h3>
+  <p class="text-[var(--foreground)] opacity-90 mb-6 leading-relaxed italic m-0!">{description}</p>
+  <div class="flex flex-wrap gap-2 mb-6">
     {tags.map((tag) => (
-      <span class="px-2 py-0.5 text-xs font-bold border-2 border-[var(--accent)] text-[var(--accent)] uppercase tracking-wider">
+      <span class="px-2 py-0.5 text-[10px] font-bold border-2 border-[var(--accent)] text-[var(--accent)] uppercase tracking-wider">
         {tag}
       </span>
     ))}
   </div>
-  <a href={url} class="text-sm font-bold bg-[var(--accent)] text-[var(--background)] px-4 py-2 hover:opacity-90 inline-flex items-center gap-2 group transition-all">
+  <a href={url} class="text-xs font-bold bg-[var(--accent)] text-[var(--background)] px-3 py-1.5 hover:opacity-90 inline-flex items-center gap-2 group transition-all">
     [ VIEW_PROJECT ]
     <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
   </a>
