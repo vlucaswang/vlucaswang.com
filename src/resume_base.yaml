@@ -150,7 +150,7 @@ locale:
   years: years
   present: present
 rendercv_settings:
-  date: '2025-11-08'
+  date: "2025-11-08"
   bold_keywords: []
   sort_entries: none
   render_command:
