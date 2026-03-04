@@ -153,7 +153,7 @@ design:
     vertical_space_between_connections_and_first_section: 0.7cm
     horizontal_space_between_connections: 0.5cm
     connections_font_family: XCharter
-    separator_between_connections: '|'
+    separator_between_connections: "|"
     use_icons_for_connections: false
     use_urls_as_placeholders_for_connections: true
     make_connections_links: true
@@ -178,7 +178,7 @@ design:
     show_time_spans_in: []
   highlights:
     bullet: •
-    nested_bullet: '-'
+    nested_bullet: "-"
     top_margin: 0.25cm
     left_margin: 0cm
     vertical_space_between_highlights: 0.19cm
@@ -186,9 +186,9 @@ design:
     summary_left_margin: 0cm
   entry_types:
     one_line_entry:
-      template: '**LABEL:** DETAILS'
+      template: "**LABEL:** DETAILS"
     education_entry:
-      main_column_first_row_template: '**INSTITUTION**, DEGREE in AREA -- LOCATION'
+      main_column_first_row_template: "**INSTITUTION**, DEGREE in AREA -- LOCATION"
       degree_column_template:
       degree_column_width: 1cm
       main_column_second_row_template: |-
@@ -196,19 +196,19 @@ design:
         HIGHLIGHTS
       date_and_location_column_template: DATE
     normal_entry:
-      main_column_first_row_template: '**NAME** -- **LOCATION**'
+      main_column_first_row_template: "**NAME** -- **LOCATION**"
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
       date_and_location_column_template: DATE
     experience_entry:
-      main_column_first_row_template: '**POSITION**, COMPANY -- LOCATION'
+      main_column_first_row_template: "**POSITION**, COMPANY -- LOCATION"
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
       date_and_location_column_template: DATE
     publication_entry:
-      main_column_first_row_template: '**TITLE**'
+      main_column_first_row_template: "**TITLE**"
       main_column_second_row_template: |-
         AUTHORS
         URL (JOURNAL)
@@ -258,7 +258,7 @@ locale:
     - November
     - December
 rendercv_settings:
-  date: '2025-11-07'
+  date: "2025-11-07"
   bold_keywords: []
   sort_entries: none
   render_command:

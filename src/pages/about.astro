@@ -1,0 +1,163 @@
+---
+import * as yaml from "js-yaml";
+import AboutLayout from "@/layouts/AboutLayout.astro";
+import resumeRaw from "../resume_base.yaml?raw";
+
+type ResumeSectionItem = {
+  label?: string;
+  details?: string;
+};
+
+type ResumeExperienceItem = {
+  company: string;
+  position: string;
+  start_date?: string;
+  end_date?: string;
+  location?: string;
+  summary?: string;
+  highlights?: string[];
+};
+
+type ResumeEducationItem = {
+  institution: string;
+  area?: string;
+  degree?: string;
+  start_date?: string;
+  end_date?: string;
+  location?: string;
+};
+
+type ResumeData = {
+  cv?: {
+    name?: string;
+    location?: string;
+    email?: string;
+    website?: string;
+    sections?: {
+      summary?: string[];
+      skills?: ResumeSectionItem[];
+      experience?: ResumeExperienceItem[];
+      education?: ResumeEducationItem[];
+    };
+  };
+};
+
+const resume = yaml.load(resumeRaw) as ResumeData;
+
+const profile = resume.cv;
+const sections = profile?.sections;
+
+const summaryItems = sections?.summary ?? [];
+const skills = sections?.skills ?? [];
+const experience = sections?.experience ?? [];
+const education = sections?.education ?? [];
+
+const formatMonth = (value?: string) => {
+  if (!value) return "Present";
+
+  const [year, month] = value.split("-");
+  const monthNum = Number(month);
+
+  if (!year || Number.isNaN(monthNum)) return value;
+
+  return new Date(Number(year), monthNum - 1, 1).toLocaleDateString("en-US", {
+    month: "short",
+    year: "numeric",
+  });
+};
+---
+
+<AboutLayout title="About">
+  <p>
+    {
+      summaryItems[0] ??
+        "Senior Platform Engineer focused on cloud infrastructure, observability, CI/CD automation, and incident response."
+    }
+  </p>
+
+  <h2>Contact</h2>
+  <ul>
+    {
+      profile?.location && (
+        <li>
+          <strong>Location:</strong> {profile.location}
+        </li>
+      )
+    }
+    {
+      profile?.email && (
+        <li>
+          <strong>Email:</strong>{" "}
+          <a href={`mailto:${profile.email}`}>{profile.email}</a>
+        </li>
+      )
+    }
+    {
+      profile?.website && (
+        <li>
+          <strong>Website:</strong>{" "}
+          <a href={profile.website}>{profile.website}</a>
+        </li>
+      )
+    }
+    <li>
+      <strong>Resume PDF:</strong>{" "}
+      <a href="/Lucas_Wang_CV.pdf" download> Download Lucas_Wang_CV.pdf </a>
+    </li>
+  </ul>
+
+  <h2>Skills</h2>
+  <ul>
+    {
+      skills.map(item => (
+        <li>
+          <strong>{item.label?.replaceAll("**", "") ?? ""}:</strong>{" "}
+          {item.details}
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>Experience</h2>
+  {
+    experience.map(item => (
+      <section>
+        <h3>
+          {item.position} at {item.company}
+        </h3>
+        <p>
+          {formatMonth(item.start_date)} - {formatMonth(item.end_date)}
+          {item.location && <> | {item.location}</>}
+        </p>
+        {item.summary && <p>{item.summary}</p>}
+        {item.highlights && item.highlights.length > 0 && (
+          <ul>
+            {item.highlights.map(highlight => (
+              <li>{highlight}</li>
+            ))}
+          </ul>
+        )}
+      </section>
+    ))
+  }
+
+  <h2>Education</h2>
+  <ul>
+    {
+      education.map(item => (
+        <li>
+          <strong>{item.institution}</strong>
+          {item.area && <> - {item.area}</>}
+          {item.degree && <> ({item.degree})</>}
+          {(item.start_date || item.end_date) && (
+            <>
+              {" "}
+              - {formatMonth(item.start_date)} to {formatMonth(item.end_date)}
+            </>
+          )}
+          {item.location && <> | {item.location}</>}
+        </li>
+      ))
+    }
+  </ul>
+</AboutLayout>
