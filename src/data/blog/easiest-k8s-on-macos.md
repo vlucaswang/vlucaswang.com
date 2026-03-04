@@ -12,8 +12,6 @@ featured: false
 draft: false
 ---
 
-This post is an English migration of my original Chinese article, keeping the original publish date.
-
 When your daily work depends on Kubernetes, you eventually need a local cluster you can run without relying on company network access. Local clusters are also useful when you want to test features safely before touching shared environments.
 
 This is also useful if you need to:

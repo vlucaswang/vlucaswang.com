@@ -1,6 +1,6 @@
 ---
 title: "Building a Practical Developer Golden Path"
-pubDatetime: 2026-03-04T00:00:00Z
+pubDatetime: 2025-03-04T00:00:00Z
 description: "How platform teams can define and adopt a golden path that improves speed without removing team autonomy."
 tags:
   - platform-engineering

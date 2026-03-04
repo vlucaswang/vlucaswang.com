@@ -6,7 +6,7 @@ tags:
   - kubernetes
   - gateway-api
   - platform
-featured: false
+featured: true
 draft: false
 ---
 

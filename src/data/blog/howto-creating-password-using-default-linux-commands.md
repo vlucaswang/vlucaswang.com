@@ -22,7 +22,7 @@ This is straightforward. Base64 is useful because some raw bytes are not printab
 
 ```bash
 openssl rand 16 | base64
-KbQ4Ga4hXgybSayDZWb+nA==
+zJhh9QmSHL95x6VRYqwm/g==
 ```
 
 ## Method 2: Date + Checksum
@@ -31,7 +31,7 @@ This is one of the quickest methods in practice. Use the current date output and
 
 ```bash
 date | md5sum
-9ef47ccd0a2abe3913587627593ad53c  -
+687cc841260fae6cfc50ff5dc6e1c7a9  -
 ```
 
 Note: the trailing `-` comes from stdin input. If you only want the hash:
@@ -46,29 +46,29 @@ This generates stronger random passwords, but they are usually harder to remembe
 
 ```bash
 tr -cd '[:print:]' < /dev/urandom | fold -w16 | head -5
-1\l'0YXYFf8w%q~Y
-Wa<hIiQ(e"gWqS.@
-8u/bb{cki'`r<{<9
-fOs-=cr!|2KRM:VJ
-K$b?5SRJ|TP#tC=T
+r9\mlY-e@I?CqO+Z
+7.Kcsa3n,r&^uv{b
+WyR@CmPz[ff:efRx
+6x2A;9)0"O>h^G/)
+z\%U!n%fgbD2G)e,
 ```
 
 If you want exactly one password:
 
 ```bash
 tr -cd '[:print:]' < /dev/urandom | head -c 16
-a7VyIrQdKey$*dVy
+RI'C9.CoX.E5E^ED
 ```
 
 Alphanumeric-only variant:
 
 ```bash
 tr -cd '[:alnum:]' < /dev/urandom | fold -w16 | head -5
- eM3DZ7sph26n2nvk
-NNduL8dcQJ8jOmSW
-4fjWeb7KvXRsH2dn
-h1bTvYlDtt2e8Rvh
-GwswhCtE4IJ230jt
+XcnAbrAZUJYI03dl
+CLgQcsKNfzv5xYlE
+TME1XKXCG2ZH0L26
+FeD024ZIGFQBnDw0
+9L1DQeM5LNgT2JTC
 ```
 
 ## Final Notes
