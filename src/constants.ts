@@ -1,7 +1,6 @@
 import type { Props } from "astro";
 import IconMail from "@/assets/icons/IconMail.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
-import IconBrandX from "@/assets/icons/IconBrandX.svg";
 import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
@@ -35,12 +34,6 @@ export const SOCIALS: Social[] = [
     linkTitle: `Send email to ${SITE.title}`,
     icon: IconMail,
   },
-  {
-    name: "X",
-    href: "https://x.com/vlucaswang",
-    linkTitle: `${SITE.title} on X`,
-    icon: IconBrandX,
-  },
 ] as const;
 
 export const SHARE_LINKS: Social[] = [
@@ -55,12 +48,6 @@ export const SHARE_LINKS: Social[] = [
     href: "https://www.facebook.com/sharer.php?u=",
     linkTitle: `Share this post on Facebook`,
     icon: IconFacebook,
-  },
-  {
-    name: "X",
-    href: "https://x.com/intent/post?url=",
-    linkTitle: `Share this post on X`,
-    icon: IconBrandX,
   },
   {
     name: "Telegram",

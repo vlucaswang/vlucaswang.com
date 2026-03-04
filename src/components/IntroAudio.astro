@@ -90,7 +90,7 @@ const { src, label = "INTRO.MP3", duration = 30 } = Astro.props;
   </span>
 
   <!-- Etiqueta del archivo -->
-  <span class="intro-label" aria-label={`Archivo: ${label}`}>{label}</span>
+  <span class="intro-label" aria-label={`Track: ${label}`}>{label}</span>
 
   <!-- Elemento audio nativo (oculto) -->
   <audio id="intro-audio-el" preload="metadata" aria-hidden="true">

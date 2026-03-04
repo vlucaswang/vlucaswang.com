@@ -9,7 +9,7 @@ export const SITE = {
   postPerIndex: 4,
   postPerPage: 8,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
-  showArchives: false,
+  showArchives: true,
   showGalleries: false,
   showBackButton: true, // show back button in post detail
   editPost: {
@@ -22,7 +22,7 @@ export const SITE = {
   lang: "en",
   timezone: "Australia/Adelaide",
   introAudio: {
-    enabled: false,
+    enabled: true,
     src: "/audio/intro-web.mp3",
     label: "INTRO.MP3",
     duration: 30,

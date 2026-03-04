@@ -95,7 +95,7 @@ const isActive = (path: string) => {
             <a
               href="/search"
               class:list={["nav-link", { "nav-active": isActive("/search") }]}
-              title="Ir a búsqueda">Search</a
+              title="Go to search">Search</a
             >
           </li>
           {
@@ -125,7 +125,7 @@ const isActive = (path: string) => {
                     "nav-link",
                     { "nav-active": isActive("/galleries") },
                   ]}
-                  title="Galerías"
+                  title="Galleries"
                   aria-label="galleries"
                 >
                   <IconGallery class="hidden sm:inline-block" />
@@ -144,8 +144,8 @@ const isActive = (path: string) => {
             <button
               data-search-trigger
               class="nav-search-btn"
-              title="Buscar (⌘K)"
-              aria-label="Abrir búsqueda"
+              title="Search (⌘K)"
+              aria-label="Open search"
               aria-keyshortcuts="Meta+K"
             >
               <IconSearch class="size-4.5" />
@@ -235,7 +235,7 @@ const isActive = (path: string) => {
                   style="--i:4"
                 >
                   <span class="mobile-nav-indicator" />
-                  <span>Galerías</span>
+                  <span>Galleries</span>
                 </a>
               )
             }
@@ -249,8 +249,8 @@ const isActive = (path: string) => {
             <button
               data-search-trigger
               class="mobile-action-btn flex-1 justify-center"
-              title="Buscar (⌘K)"
-              aria-label="Abrir búsqueda"
+              title="Search (⌘K)"
+              aria-label="Open search"
             >
               <IconSearch class="size-4" />
               <span>Search</span>
@@ -260,7 +260,7 @@ const isActive = (path: string) => {
                 <button
                   id="theme-btn-mobile"
                   class="mobile-action-btn flex-1 justify-center"
-                  title="Cambiar tema"
+                  title="Switch theme"
                   aria-label="auto"
                   aria-live="polite"
                 >
