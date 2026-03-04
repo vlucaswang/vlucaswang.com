@@ -1,0 +1,21 @@
+name: Purge Cloudflare Cache After Pages Deploy
+
+on:
+  check_run:
+    types: [completed]
+
+jobs:
+  purge-cache:
+    name: Purge Cloudflare Host Cache
+    if: >
+      github.event.check_run.name == 'Cloudflare Pages' &&
+      github.event.check_run.conclusion == 'success' &&
+      github.event.check_run.check_suite.head_branch == 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge host cache
+        run: |
+          curl -sS --fail -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_PURGE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{"hosts":["www.vlucaswang.com"]}'
