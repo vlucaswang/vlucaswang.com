@@ -67,18 +67,9 @@ const structuredData = {
       cssVariable="--font-wotfard"
       preload={[{ subset: "latin", weight: 400, style: "normal" }]}
     />
-    <Font
-      cssVariable="--font-sriracha"
-      preload={[{ subset: "latin", weight: 400, style: "normal" }]}
-    />
-    <Font
-      cssVariable="--font-cartograph"
-      preload={[{ subset: "latin", weight: 400, style: "normal" }]}
-    />
-    <Font
-      cssVariable="--font-cascadia-code"
-      preload={[{ subset: "latin", weight: 400, style: "normal" }]}
-    />
+    <Font cssVariable="--font-sriracha" />
+    <Font cssVariable="--font-cartograph" />
+    <Font cssVariable="--font-cascadia-code" />
 
     <!-- General Meta Tags -->
     <title>{title}</title>
@@ -296,6 +287,12 @@ const structuredData = {
     opacity: 1;
   }
 
+  @media (pointer: coarse) {
+    .site-cursor-glow {
+      display: none;
+    }
+  }
+
   .site-grain {
     position: absolute;
     inset: 0;
@@ -316,6 +313,9 @@ const structuredData = {
     if (cursorCleanup) cursorCleanup.abort();
     cursorCleanup = new AbortController();
     const { signal } = cursorCleanup;
+
+    const prefersFinePointer = window.matchMedia("(pointer: fine)").matches;
+    if (!prefersFinePointer) return;
 
     const cursorGlow = document.querySelector<HTMLElement>(".site-cursor-glow");
     let ticking = false;

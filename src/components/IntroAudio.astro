@@ -93,7 +93,7 @@ const { src, label = "INTRO.MP3", duration = 30 } = Astro.props;
   <span class="intro-label" aria-label={`Track: ${label}`}>{label}</span>
 
   <!-- Elemento audio nativo (oculto) -->
-  <audio id="intro-audio-el" preload="metadata" aria-hidden="true">
+  <audio id="intro-audio-el" preload="none" aria-hidden="true">
     <source src={src} type="audio/mpeg" />
     Tu navegador no soporta el elemento audio.
   </audio>
